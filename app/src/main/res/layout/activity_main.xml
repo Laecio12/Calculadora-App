@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/expression"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:gravity="end"
+        android:ellipsize="start"
+        android:singleLine="true"
+        android:layout_marginTop="10dp"
+
+        />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:gravity="end"
+        android:ellipsize="start"
+        android:singleLine="true"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/btn_c"
+           style="@style/BTN_Operators"
+            android:text="@string/c" />
+        <TextView
+            android:id="@+id/btn_bar"
+           style="@style/BTN_Operators"
+            android:text="@string/bar" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/btn_seven"
+            style="@style/BTN_Numbers"
+            android:text="@string/seven" />
+        <TextView
+            android:id="@+id/btn_eight"
+            style="@style/BTN_Numbers"
+            android:text="@string/eight" />
+        <TextView
+            android:id="@+id/btn_nine"
+            style="@style/BTN_Numbers"
+            android:text="@string/nine" />
+        <TextView
+            android:id="@+id/btn_x"
+            style="@style/BTN_Operators"
+            android:text="@string/multiplication" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/btn_four"
+            style="@style/BTN_Numbers"
+            android:text="@string/four" />
+        <TextView
+            android:id="@+id/btn_five"
+            style="@style/BTN_Numbers"
+            android:text="@string/five" />
+        <TextView
+            android:id="@+id/btn_six"
+            style="@style/BTN_Numbers"
+            android:text="@string/six" />
+        <TextView
+            android:id="@+id/btn_minus"
+            style="@style/BTN_Operators"
+            android:text="@string/minus" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/btn_one"
+            style="@style/BTN_Numbers"
+            android:text="@string/one" />
+        <TextView
+            android:id="@+id/btn_two"
+            style="@style/BTN_Numbers"
+            android:text="@string/two" />
+        <TextView
+            android:id="@+id/btn_three"
+            style="@style/BTN_Numbers"
+            android:text="@string/three" />
+        <TextView
+            android:id="@+id/btn_plus"
+            style="@style/BTN_Operators"
+            android:text="@string/plus" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/btn_zero"
+            style="@style/BTN_Numbers"
+            android:text="@string/zero" />
+        <TextView
+            android:id="@+id/btn_comma"
+            style="@style/BTN_Numbers"
+            android:text="@string/dot" />
+        <ImageView
+            android:id="@+id/btn_backspace"
+            android:contentDescription="@string/backspace"
+            style="@style/BTN_Numbers"
+            android:src="@drawable/ic_baseline_backspace_24"
+            android:scaleType="center"
+             />
+        <TextView
+            android:id="@+id/btn_equal"
+            style="@style/BTN_Operators"
+            android:text="@string/equal" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
